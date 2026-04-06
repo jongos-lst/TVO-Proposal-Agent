@@ -1,0 +1,12 @@
+backend/venv/
+backend/chroma_data/
+backend/output/
+backend/__pycache__/
+frontend/node_modules/
+frontend/dist/
+.env
+.git/
+.claude/
+.mypy_cache/
+*.pyc
+*.pyo

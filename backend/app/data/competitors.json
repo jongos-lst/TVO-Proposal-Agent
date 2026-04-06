@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Dell Latitude 5430 Rugged",
+    "category": "Semi-Rugged Laptop",
+    "base_price": 2199.0,
+    "warranty_standard": "3-year limited hardware warranty",
+    "annual_failure_rate": 0.08,
+    "display_size": "14 inch FHD",
+    "rugged_rating": "MIL-STD-810H, IP53",
+    "weight": "2.07 kg (4.56 lbs)",
+    "processor": "Intel Core i7-1365U (13th Gen)",
+    "product_url": "https://www.dell.com/support/kbdoc/en-us/000201686/latitude-5430-rugged-setup-and-specifications",
+    "weaknesses": [
+      "Semi-rugged only — IP53, not IP66; limited water/dust protection",
+      "No hot-swappable battery — downtime during battery replacement",
+      "Lower screen brightness (1000 nit max vs 1400 nit Getac B360)",
+      "No dual battery option for extended field missions",
+      "Higher failure rate in extreme environments (8% vs 2%)",
+      "Limited warranty excludes accidental damage (drops, spills)"
+    ]
+  },
+  {
+    "name": "Dell Latitude 7330 Rugged Extreme",
+    "category": "Fully Rugged Laptop",
+    "base_price": 3499.0,
+    "warranty_standard": "3-year limited hardware warranty",
+    "annual_failure_rate": 0.05,
+    "display_size": "13.3 inch FHD",
+    "rugged_rating": "MIL-STD-810H, IP65",
+    "weight": "2.72 kg (5.99 lbs)",
+    "processor": "Intel Core i7-1260U (12th Gen)",
+    "product_url": "https://www.dell.com/support/kbdoc/en-us/000201816/latitude-7330-rugged-extreme-setup-and-specifications",
+    "weaknesses": [
+      "IP65 (not IP66) — less water jet protection than Getac",
+      "Heavier than comparable Getac B360 (2.72 kg vs 2.32 kg)",
+      "Warranty does not include bumper-to-bumper accidental damage",
+      "Limited display brightness compared to Getac 1400 nit options",
+      "No Wi-Fi 7 or AI Boost NPU on current generation",
+      "Smaller ecosystem of vehicle docking accessories"
+    ]
+  },
+  {
+    "name": "Panasonic Toughbook 40",
+    "category": "Fully Rugged Laptop",
+    "base_price": 3899.0,
+    "warranty_standard": "3-year limited warranty",
+    "annual_failure_rate": 0.04,
+    "display_size": "14 inch FHD",
+    "rugged_rating": "MIL-STD-810H, IP66",
+    "weight": "3.5 kg (7.7 lbs)",
+    "processor": "Intel Core i7-1370P vPro (13th Gen)",
+    "product_url": "https://na.panasonic.com/us/computers-tablets/laptops/fully-rugged-laptops/toughbook-40",
+    "weaknesses": [
+      "Significantly higher price point ($3,899 vs $3,299 Getac B360)",
+      "Much heavier form factor (3.5 kg vs 2.32 kg)",
+      "Warranty does not include accidental damage coverage",
+      "Older modular design — slower upgrade path vs Getac",
+      "Limited display brightness compared to Getac 1400 nit",
+      "No AI-ready NPU or Wi-Fi 7 on current generation"
+    ]
+  },
+  {
+    "name": "Panasonic Toughbook 33",
+    "category": "Fully Rugged 2-in-1 Tablet",
+    "base_price": 4199.0,
+    "warranty_standard": "3-year limited warranty",
+    "annual_failure_rate": 0.04,
+    "display_size": "12 inch QHD",
+    "rugged_rating": "MIL-STD-810H, IP65",
+    "weight": "1.76 kg tablet / 3.52 kg with keyboard",
+    "processor": "Intel Core i7-1270P (12th Gen)",
+    "product_url": "https://na.panasonic.com/us/computers-tablets/laptops/2-in-1-laptops/toughbook-33",
+    "weaknesses": [
+      "Highest price in category ($4,199)",
+      "IP65 only — lower water protection than IP66 Getac alternatives",
+      "Very heavy with keyboard dock (3.52 kg)",
+      "Limited warranty — no bumper-to-bumper accidental damage",
+      "Aging platform with no AI Boost or Wi-Fi 7",
+      "Smaller 12 inch display limits productivity"
+    ]
+  },
+  {
+    "name": "HP EliteBook 840 G10",
+    "category": "Business Laptop (Non-Rugged)",
+    "base_price": 1549.0,
+    "warranty_standard": "1-year limited warranty",
+    "annual_failure_rate": 0.15,
+    "display_size": "14 inch FHD",
+    "rugged_rating": "MIL-STD-810H (limited tests only)",
+    "weight": "1.36 kg (3.0 lbs)",
+    "processor": "Intel Core i7-1365U (13th Gen)",
+    "product_url": "https://www.hp.com/us-en/shop/pdp/hp-elitebook-840-g10-notebook-pc-wolf-pro-security-edition",
+    "weaknesses": [
+      "Not ruggedized — no drop or water ingress protection",
+      "Very high failure rate in field conditions (15% annually)",
+      "Standard 1-year warranty only — very expensive to extend",
+      "No sunlight-readable display (400 nits typical)",
+      "No hot-swappable or dual battery option",
+      "Frequent replacements needed in harsh environments",
+      "5-year TCO vastly exceeds rugged alternatives"
+    ]
+  },
+  {
+    "name": "Zebra ET80/ET85",
+    "category": "Rugged Tablet",
+    "base_price": 2799.0,
+    "warranty_standard": "1-year standard warranty",
+    "annual_failure_rate": 0.06,
+    "display_size": "12 inch FHD",
+    "rugged_rating": "MIL-STD-810H, IP65",
+    "weight": "1.53 kg (3.37 lbs)",
+    "processor": "Intel Core i5-1140G7 (11th Gen)",
+    "product_url": "https://www.zebra.com/us/en/products/tablets/et80-et85-series.html",
+    "weaknesses": [
+      "Only 1-year standard warranty (vs 3-year Getac bumper-to-bumper)",
+      "IP65 only — lower protection than Getac IP66",
+      "Limited computing power compared to full laptops",
+      "Older 11th Gen Intel processor",
+      "Higher TCO due to short warranty and expensive accessories",
+      "Smaller display (12 inch) limits field productivity"
+    ]
+  },
+  {
+    "name": "Samsung Galaxy Tab Active4 Pro",
+    "category": "Rugged Tablet (Android)",
+    "base_price": 649.0,
+    "warranty_standard": "1-year limited warranty",
+    "annual_failure_rate": 0.1,
+    "display_size": "10.1 inch WUXGA",
+    "rugged_rating": "MIL-STD-810H, IP68",
+    "weight": "0.674 kg (1.49 lbs)",
+    "processor": "Qualcomm Snapdragon 778G",
+    "product_url": "https://www.samsung.com/us/business/tablets/galaxy-tab-active4-pro/",
+    "weaknesses": [
+      "Android only — incompatible with Windows enterprise workflows",
+      "ARM processor — cannot run x86 field applications",
+      "Only 1-year warranty with no bumper-to-bumper option",
+      "Limited to 6GB RAM — insufficient for heavy enterprise apps",
+      "10% annual failure rate in demanding industrial use",
+      "No keyboard dock for productive data entry",
+      "No Thunderbolt/USB-C docking ecosystem"
+    ]
+  },
+  {
+    "name": "None",
+    "category": "Unknown",
+    "base_price": 0.0,
+    "warranty_standard": "Unknown",
+    "annual_failure_rate": 0.1,
+    "product_url": "https://www.dell.com/zh-tw/shop/dell-筆記型電腦/sf/rugged-laptops",
+    "weaknesses": []
+  },
+  {
+    "name": "Panasonic CF-33",
+    "category": "Unknown",
+    "base_price": 0.0,
+    "warranty_standard": "Unknown",
+    "annual_failure_rate": 0.05,
+    "product_url": "https://connect.na.panasonic.com/toughbook/rugged-laptops-tablets/toughbook-33",
+    "weaknesses": []
+  }
+]

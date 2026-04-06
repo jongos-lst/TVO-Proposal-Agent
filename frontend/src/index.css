@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-getac-blue: #003D6B;
+  --color-getac-light: #007BC0;
+  --color-getac-dark: #002244;
+
+  --color-phase-intake: #64748b;
+  /* slate-500 */
+  --color-phase-recommendation: #007BC0;
+  /* getac-light */
+  --color-phase-calculation: #f59e0b;
+  /* amber-500 */
+  --color-phase-review: #a855f7;
+  /* purple-500 */
+  --color-phase-generation: #10b981;
+  /* emerald-500 */
+  --color-phase-complete: #059669;
+  /* emerald-600 */
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+/* Custom scrollbar for chat */
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(75, 85, 99, 0.4);
+  border-radius: 10px;
+}
+
+/* Markdown typography defaults */
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body p {
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+  color: theme('colors.white');
+}

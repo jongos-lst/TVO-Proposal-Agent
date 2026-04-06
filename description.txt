@@ -1,0 +1,106 @@
+TVO Proposal Agent
+Interview Stage 2 Challenge:
+我們邀請您設計一個具備「情境感知」、「競品分析」與「自動化提案產出」的 AI Agent，協助銷售團隊在數分鐘內完成 Total Value of Ownership (TVO) 提案。
+
+考題背景
+為什麼是 TVO Agent？
+Getac 先進技術發展處正在打造一套 AI 驅動的 TVO（Total Value of Ownership）提案引擎，協助業務/SA 團隊快速針對客戶需求，生成具說服力的價值主張提案。 不同於標準的 Chatbot，這套系統需要具備主動引導、跨資料整合與結構化輸出的能力。
+
+情境輸入
+快速收集客戶需求與現況，包含痛點、使用情境、預算與服務保固要求，確保資料完整再推進流程。
+
+競品智能比對
+自動抓取 Getac 產品定價、保固條款與規格，並從知識庫中動態比對競品差異，產出具說服力的差異化優勢。
+
+自動化簡報產出
+Sales 確認提案摘要後，一鍵生成可下載的 PowerPoint TVO 提案簡報，大幅縮短提案準備時間。
+
+Agent 任務流程
+Agent 需引導完成以下五個階段:
+
+Phase 01
+客戶情境收集 Customer Persona Intake
+Agent 提供結構化介面，讓 Sales / SA 輸入客戶 Persona。需收集以下資訊：
+1. 客戶痛點 (Pain Points)
+2. 使用情境 (User Scenarios)
+3. 預算範圍 (Budget)
+4. 服務與保固需求 (Service & Warranty Terms)
+5. 客戶目前使用的產品 (Current Device / Solution)
+Key Challenge — Completeness Check
+若必填欄位不完整，Agent 必須能夠「偵測」缺漏並主動追問，確保所有資訊齊全後才進入下一階段。
+
+Phase 02
+產品推薦確認 Product Recommendation
+完成客戶情境收集後，Agent 主動詢問 Sales：「您希望向這位客戶推薦哪款 Getac 產品？」接著自動執行：
+1. 抓取目標產品的價格資訊
+2. 擷取對應的服務與保固條款
+3. 從知識庫中找出相較客戶現有產品的競爭優勢
+Bonus Point
+整合 RAG（Retrieval-Augmented Generation）從產品規格文件或競品資料庫中動態擷取資訊，而非硬編碼靜態答案。
+
+Phase 03
+TVO 價值計算 Value Calculation Engine
+Agent 基於前兩階段資料，自動計算並呈現可量化的價值主張：
+1. TCO 比較（Total Cost of Ownership）
+2. 生產力提升估算
+3. 風險降低與服務保固價值
+4. 相對競品的差異化優勢摘要
+Key Challenge — Explainable AI
+計算邏輯需透明可解釋，讓 Sales 能在客戶面前清楚說明每一項數字的來源與假設，增強提案說服力。
+
+Phase 04
+提案確認 Proposal Review — Human in the Loop
+Agent 將所有資訊彙整成結構化摘要，呈現給 Sales 確認後再輸出，內容包含：
+1. 客戶 Persona 摘要
+2. 推薦產品與定價
+3. TVO 計算結果
+4. 競品比較重點
+5. 建議的價值主張訴求
+Bonus Point — 重要設計要求
+確認無誤後，才觸發下一階段的簡報生成流程。請展現如何設計 Human-in-the-loop 機制，讓 Sales 能修改或核准任一欄位。
+
+Phase 05
+PowerPoint 簡報產出 Deck Generation
+確認後，Agent 自動生成一份可下載的 PowerPoint TVO 提案簡報，內含：
+1. 封面頁：客戶名稱、提案日期
+2. 客戶現況與痛點
+3. Getac 解決方案介紹
+4. TVO / TCO 比較表
+5. 競品差異化分析
+6. 結論與建議下一步
+Key Challenge — 展示工具整合能力
+使用 python-pptx 或同等工具生成 .pptx 檔案，並提供使用者直接下載，展現您對端到端工具整合的掌握能力。
+
+
+技術與功能需求
+技術規格
+開發工具不拘
+Python, Vue, React, Node.js 皆可
+LangChain
+OpenAI API and Local LLM Capable
+python-pptx / openpyxl for file generation
+
+Core Requirement
+Agent 工作流設計
+請展現如何設計多階段 Agent 工作流程。系統需清楚知道目前處於哪個 Phase，並能在各 Phase 間傳遞狀態與上下文。
+
+資料整合能力
+產品資訊可從靜態 JSON/CSV 模擬，或串接真實 API
+競品資料可用 RAG + Vector DB 模擬知識庫
+
+交付項目
+請在第二輪面試前準備好以下交付項目
+GitHub Source Code
+包含完整程式碼的 Repository 連結，確保評審可 Clone 並在本地執行。
+
+README 文件
+清楚說明以下內容：
+1. 如何安裝與執行（requirements.txt）
+2. Agent 工作流設計思路
+3. Prompt 設計邏輯
+4. 資料整合架構說明
+5. 技術選型原因
+
+Live Demo
+面試時將有 15–20 分鐘進行即時演示與程式碼解說。 需完整展示 End-to-End 流程：從輸入客戶 Persona，歷經五個 Phase，直到最終下載 PowerPoint 提案簡報。
+
